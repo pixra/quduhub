@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="250">
+  <defs>
+    <!-- Dark Tech Aesthetic Glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Premium Metallic/Glass Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#e0e6ed" />
+      <stop offset="100%" stop-color="#8b949e" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern for 'Workspace' Feel -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.03" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* Bold, Modern Tech Typography */
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 52px;
+      font-weight: 800;
+      fill: url(#textGrad);
+      text-anchor: middle;
+      dominant-baseline: middle;
+      letter-spacing: -1.5px;
+    }
+    
+    /* Sleek Subtitle */
+    .subtitle {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #8b949e;
+      text-anchor: middle;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* Ultra-Smooth 18-second Animation Cycle (6 seconds per line) */
+    .anim-text {
+      opacity: 0;
+      animation: dropBlur 18s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    
+    /* Staggered Delays for the 3 main messages */
+    .anim-text:nth-child(1) { animation-delay: 0s; }
+    .anim-text:nth-child(2) { animation-delay: 6s; }
+    .anim-text:nth-child(3) { animation-delay: 12s; }
+
+    /* Refined Blur & Slide Transition Keyframes */
+    @keyframes dropBlur {
+      0% { opacity: 0; transform: translateY(-15px) scale(0.98); filter: blur(8px); }
+      8%, 25% { opacity: 1; transform: translateY(0px) scale(1); filter: blur(0px); }
+      33%, 100% { opacity: 0; transform: translateY(15px) scale(1.01); filter: blur(8px); }
+    }
+  </style>
+
+  <!-- Deep GitHub Dark Base Background -->
+  <rect width="100%" height="100%" fill="#0d1117" />
+  
+  <!-- Faint Tech Grid Pattern Overlay -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Subtle Center Glow -->
+  <rect width="100%" height="100%" fill="url(#glow)" />
+  
+  <!-- Animated Main Titles for QuduHub -->
+  <g transform="translate(400, 110)">
+    <text class="title anim-text">Meet QuduHub.</text>
+    <text class="title anim-text">General-Purpose AI Workspace.</text>
+    <text class="title anim-text">Where Ideas Take Shape.</text>
+  </g>
+  
+  <!-- Static Premium Subtitle Highlighting Core Modules -->
+  <text x="400" y="210" class="subtitle">Intelligence • Research • Creation</text>
+</svg>
