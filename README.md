@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/header.svg" alt="QuduHub. The workspace where ideas take shape." width="100%" />
+  <img src="header.svg" alt="QuduHub. The workspace where ideas take shape." width="100%" />
 </div>
 
 <br>
@@ -16,13 +16,13 @@
 
 </div>
 
-<!-- OPTIONAL: product demo. Put a 8-12s screen recording at assets/demo.gif (max ~10 MB) and uncomment.
+<!-- OPTIONAL: product demo. Put a 8-12s screen recording at demo.gif (max ~10 MB) and uncomment.
 <div align="center">
-  <img src="assets/demo.gif" alt="QuduHub in action" width="92%" />
+  <img src="demo.gif" alt="QuduHub in action" width="92%" />
 </div>
 -->
 
-<img src="assets/sec-overview.svg" width="100%" alt="01 Overview" />
+<img src="sec-overview.svg" width="100%" alt="01 Overview" />
 
 **[QuduHub](https://qudu.in/)**, also called **Qudu**, is a general-purpose AI workspace for thinking, research and creation, developed under [Pixra](https://github.com/pixra). It brings conversational intelligence, document exploration and code analysis into one focused environment, built for writers, engineers, researchers and students alike.
 
@@ -30,31 +30,31 @@ Qudu is not a disconnected chatbot tab. **Qudu AI lives inside the workspace**, 
 
 > **Pre-Launch Preview.** Qudu is actively evolving. What works today is listed honestly below, along with what is still experimental or in development.
 
-<!-- OPTIONAL: main screenshot. Save as assets/screenshot-chat.png and uncomment.
+<!-- OPTIONAL: main screenshot. Save as screenshot-chat.png and uncomment.
 <div align="center">
-  <img src="assets/screenshot-chat.png" alt="Qudu AI chat workspace" width="92%" />
+  <img src="screenshot-chat.png" alt="Qudu AI chat workspace" width="92%" />
 </div>
 -->
 
-<img src="assets/sec-capabilities.svg" width="100%" alt="02 Capabilities" />
+<img src="sec-capabilities.svg" width="100%" alt="02 Capabilities" />
 
-<img src="assets/capabilities.svg" width="100%" alt="Qudu capabilities" />
+<img src="capabilities.svg" width="100%" alt="Qudu capabilities" />
 
-<img src="assets/sec-platform-status.svg" width="100%" alt="03 Platform Status" />
+<img src="sec-platform-status.svg" width="100%" alt="03 Platform Status" />
 
 Transparent classification of what is ready today and what is still being built.
 
-<img src="assets/status.svg" width="100%" alt="Platform status: available, experimental, in development" />
+<img src="status.svg" width="100%" alt="Platform status: available, experimental, in development" />
 
-<img src="assets/sec-use-cases.svg" width="100%" alt="04 Use Cases" />
+<img src="sec-use-cases.svg" width="100%" alt="04 Use Cases" />
 
-<img src="assets/usecases.svg" width="100%" alt="Qudu use cases" />
+<img src="usecases.svg" width="100%" alt="Qudu use cases" />
 
-<img src="assets/sec-architecture.svg" width="100%" alt="05 Architecture" />
+<img src="sec-architecture.svg" width="100%" alt="05 Architecture" />
 
 QuduHub is architected for speed and resilience on modern web infrastructure. Responses render as rich markdown with math, Mermaid diagrams are drawn inline, and code runs through integrated **Monaco** and **Sandpack** viewers.
 
-<img src="assets/flow.svg" width="100%" alt="Animated request flow through Qudu AI" />
+<img src="flow.svg" width="100%" alt="Animated request flow through Qudu AI" />
 
 <details>
 <summary><b>View as Mermaid diagram</b></summary>
@@ -74,11 +74,11 @@ flowchart LR
 
 > The core application logic and backend repositories are maintained privately to protect security and product integrity during the testing phase.
 
-<img src="assets/sec-get-started.svg" width="100%" alt="06 Get Started" />
+<img src="sec-get-started.svg" width="100%" alt="06 Get Started" />
 
 No setup required.
 
-<img src="assets/steps.svg" width="100%" alt="Three steps to get started" />
+<img src="steps.svg" width="100%" alt="Three steps to get started" />
 
 <div align="center">
 
@@ -86,7 +86,7 @@ No setup required.
 
 </div>
 
-<img src="assets/sec-founder.svg" width="100%" alt="07 Founder" />
+<img src="sec-founder.svg" width="100%" alt="07 Founder" />
 
 <div align="center">
 
@@ -94,7 +94,7 @@ Founded and architected by [**Radhe Bharadwaj**](https://qudu.in/about/radhe-bha
 
 </div>
 
-<img src="assets/sec-connect.svg" width="100%" alt="08 Connect" />
+<img src="sec-connect.svg" width="100%" alt="08 Connect" />
 
 <div align="center">
 
@@ -109,4 +109,4 @@ Founded and architected by [**Radhe Bharadwaj**](https://qudu.in/about/radhe-bha
 
 <br>
 
-<img src="assets/end.svg" width="100%" alt="QuduHub. Built by Pixra." />
+<img src="end.svg" width="100%" alt="QuduHub. Built by Pixra." />
