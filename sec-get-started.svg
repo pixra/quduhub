@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 72" width="1200" height="72" role="img" aria-label="sec-get-started"><defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5383b"/><stop offset="1" stop-color="#ff7b7b"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#e5383b" stop-opacity=".38"/><stop offset="1" stop-color="#e5383b" stop-opacity="0"/></radialGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5383b" stop-opacity="0"/><stop offset=".5" stop-color="#e5383b" stop-opacity=".14"/><stop offset="1" stop-color="#e5383b" stop-opacity="0"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" opacity=".07"/></pattern>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs><rect width="1200" height="72" rx="16" fill="#0d1117"/><rect width="1200" height="72" rx="16" fill="url(#dots)"/>
+<text x="28" y="45" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#e5383b">06</text>
+<text x="76" y="47" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="28" font-weight="800" fill="#f4f6fa" letter-spacing="1">Get Started</text>
+<line x1="320" y1="36" x2="1172" y2="36" stroke="#2a2f38"/>
+<line x1="320" y1="36" x2="320" y2="36" stroke="url(#g)" stroke-width="2"><animate attributeName="x2" from="320" to="1172" dur="1.4s" fill="freeze"/></line>
+<circle r="5" fill="#ff6b6b"><animateMotion path="M320 36 L1172 36" dur="4s" repeatCount="indefinite"/></circle><rect x=".5" y=".5" width="1199" height="71" rx="16" fill="none" stroke="#2a1b1f"/></svg>

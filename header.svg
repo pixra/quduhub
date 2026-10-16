@@ -1,77 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
-  <defs>
-    <!-- Dark Tech Aesthetic Glow -->
-    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05" />
-      <stop offset="100%" stop-color="#0d1117" stop-opacity="0" />
-    </radialGradient>
-    
-    <!-- Premium Metallic/Glass Text Gradient -->
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="70%" stop-color="#e0e6ed" />
-      <stop offset="100%" stop-color="#8b949e" />
-    </linearGradient>
-
-    <!-- Subtle Grid Pattern for 'Workspace' Feel -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05" />
-    </pattern>
-  </defs>
-
-  <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 52px;
-      font-weight: 800;
-      fill: url(#textGrad);
-      text-anchor: middle;
-      dominant-baseline: middle;
-      letter-spacing: -1.5px;
-    }
-    
-    .subtitle {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-      font-size: 13px;
-      font-weight: 600;
-      fill: #8b949e;
-      text-anchor: middle;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .anim-text {
-      opacity: 0;
-      animation: dropBlur 15s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-    
-    .anim-text:nth-child(1) { animation-delay: 0s; }
-    .anim-text:nth-child(2) { animation-delay: 5s; }
-    .anim-text:nth-child(3) { animation-delay: 10s; }
-
-    @keyframes dropBlur {
-      0% { opacity: 0; transform: translateY(-15px) scale(0.98); filter: blur(8px); }
-      10%, 25% { opacity: 1; transform: translateY(0px) scale(1); filter: blur(0px); }
-      35%, 100% { opacity: 0; transform: translateY(15px) scale(1.01); filter: blur(8px); }
-    }
-  </style>
-
-  <!-- Deep GitHub Dark Base Background -->
-  <rect width="800" height="250" fill="#0d1117" />
-  
-  <!-- Faint Tech Grid Pattern Overlay -->
-  <rect width="800" height="250" fill="url(#grid)" />
-
-  <!-- Subtle Center Glow -->
-  <rect width="800" height="250" fill="url(#glow)" />
-  
-  <!-- Animated Main Titles for QuduHub -->
-  <g transform="translate(400, 110)">
-    <text class="title anim-text">Meet QuduHub.</text>
-    <text class="title anim-text">General-Purpose AI Workspace.</text>
-    <text class="title anim-text">Where Ideas Take Shape.</text>
-  </g>
-  
-  <!-- Static Premium Subtitle Highlighting Core Modules -->
-  <text x="400" y="210" class="subtitle">Intelligence • Research • Creation</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="header"><defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5383b"/><stop offset="1" stop-color="#ff7b7b"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#e5383b" stop-opacity=".38"/><stop offset="1" stop-color="#e5383b" stop-opacity="0"/></radialGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5383b" stop-opacity="0"/><stop offset=".5" stop-color="#e5383b" stop-opacity=".14"/><stop offset="1" stop-color="#e5383b" stop-opacity="0"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" opacity=".07"/></pattern>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs><rect width="1200" height="440" rx="24" fill="#0d1117"/><rect width="1200" height="440" rx="24" fill="url(#dots)"/>
+<ellipse cx="260" cy="220" rx="420" ry="220" fill="url(#glow)"><animate attributeName="opacity" values=".5;1;.5" dur="5s" repeatCount="indefinite"/></ellipse>
+<ellipse cx="1050" cy="80" rx="260" ry="160" fill="url(#glow)" opacity=".35"/>
+<rect x="-300" y="0" width="300" height="440" fill="url(#scan)"><animate attributeName="x" from="-300" to="1200" dur="7s" repeatCount="indefinite"/></rect>
+<g transform="translate(190 220)">
+ <animateTransform attributeName="transform" type="translate" values="190 222;190 208;190 222" dur="4s" repeatCount="indefinite"/>
+ <circle r="104" fill="none" stroke="#e5383b" stroke-opacity=".3" stroke-dasharray="4 14"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
+ <circle r="64" fill="none" stroke="#e5383b" stroke-width="22" opacity=".25" filter="url(#blur)"/>
+ <circle r="64" fill="none" stroke="url(#g)" stroke-width="16" stroke-linecap="round" stroke-dasharray="402" stroke-dashoffset="402"><animate attributeName="stroke-dashoffset" from="402" to="0" dur="1.8s" fill="freeze"/></circle>
+ <path d="M26 32 L80 86" stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="80"><animate attributeName="stroke-dashoffset" from="80" to="0" begin="1.2s" dur=".8s" fill="freeze"/></path>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin=".4s" dur="1s" fill="freeze"/>
+ <animateTransform attributeName="transform" type="translate" from="-30 0" to="0 0" begin=".4s" dur="1s" fill="freeze"/>
+ <rect x="340" y="104" width="72" height="4" rx="2" fill="#e5383b"/>
+ <text x="338" y="208" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="96" font-weight="800" fill="#f4f6fa" letter-spacing="-2">Qudu<tspan fill="#e5383b">Hub</tspan></text>
+ <text x="342" y="258" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="27" fill="#98a2b3">The workspace where ideas take shape.</text>
+</g>
+<text x="340" y="322" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="22" fill="#e5383b" opacity="0">&gt; Conversational AI<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.000;0.020;0.220;0.250;1.000" dur="12s" repeatCount="indefinite"/></text><text x="340" y="322" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="22" fill="#e5383b" opacity="0">&gt; Deep research<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.250;0.270;0.470;0.500;1.000" dur="12s" repeatCount="indefinite"/></text><text x="340" y="322" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="22" fill="#e5383b" opacity="0">&gt; Document viewer<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.500;0.520;0.720;0.750;1.000" dur="12s" repeatCount="indefinite"/></text><text x="340" y="322" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="22" fill="#e5383b" opacity="0">&gt; Diagrams and live code<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0.000;0.750;0.770;0.970;1.000" dur="12s" repeatCount="indefinite"/></text>
+<g font-family="'SF Mono',Menlo,Consolas,monospace" font-size="14">
+ <rect x="340" y="360" width="222" height="38" rx="19" fill="#1c0f12" stroke="#e5383b" stroke-opacity=".6"/>
+ <circle cx="364" cy="379" r="5" fill="#e5383b"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/><animate attributeName="r" values="4;6;4" dur="1.6s" repeatCount="indefinite"/></circle>
+ <text x="380" y="384" fill="#ffb3b5">PRE-LAUNCH PREVIEW</text>
+ <rect x="578" y="360" width="160" height="38" rx="19" fill="#12161d" stroke="#2e3640"/><text x="600" y="384" fill="#98a2b3">BUILT BY PIXRA</text>
+ <rect x="754" y="360" width="130" height="38" rx="19" fill="#12161d" stroke="#2e3640"/><text x="776" y="384" fill="#98a2b3">QUDU.IN</text>
+</g>
+<rect x="0" y="434" width="1200" height="6" fill="url(#g)"><animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></rect><rect x=".5" y=".5" width="1199" height="439" rx="24" fill="none" stroke="#2a1b1f"/></svg>
